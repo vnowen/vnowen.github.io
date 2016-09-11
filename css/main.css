@@ -45,9 +45,14 @@ a:hover {
 .content {
   margin-top: 50px;
 }
+<<<<<<< HEAD
 
 .image {
   padding-bottom: 50px;
+=======
+.big-heading {
+  margin-top: 15vh;
+>>>>>>> bd8dc1f83106c25eb443c9cf22506710abaadeea
 }
 
 .margin-top {
