@@ -45,9 +45,9 @@ a:hover {
 .content {
   margin-top: 50px;
 }
-.big-heading {
-  margin-top: 15vh;
-  font-family: "Courier New", Courier, monospace;
+
+.image {
+  padding-bottom: 50px;
 }
 
 .margin-top {
