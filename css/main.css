@@ -43,18 +43,14 @@ a.text-link:hover:before {
   visibility: visible;
   transform: scaleX(1); }
 
-.logo {
-  width: 20vw;
-  max-width: 100px; }
-
 .header {
   width: 100% !important;
   background-color: #e3ffd1;
   color: #000000;
   padding: 20px;
-  border-bottom: 10px solid #f2d0ce; }
-  .header .inline-heading, .header p {
-    display: none; }
+  border-bottom: 5vh solid #f2d0ce;
+  height: 80vh;
+  text-align: center; }
   .header ul {
     padding: 0 !important; }
     .header ul li {
@@ -67,7 +63,7 @@ ul {
   list-style-type: none; }
 
 .row > div {
-  padding-top: 20px; }
+  padding-top: 20vh; }
 
 .row p, .row h1, .row h2, .row h3, .row h4, .row h5, .row ul, .row ol {
   padding: 0 40px; }
@@ -79,7 +75,16 @@ ul {
   margin: 10px 0; }
 
 .contact {
-  background-color: #3c4b52; }
+  background-color: #3c4b52;
+  text-align: center;
+  color: #ffffff;
+  padding: 5vh;
+  height: 20vh; }
+  .contact a {
+    color: #ffffff;
+    padding: 0 10px; }
+    .contact a :hover {
+      color: #f2d0ce; }
 
 .project-img {
   padding: 8px; }
@@ -109,6 +114,7 @@ ul {
   text-align: center;
   background-color: #e3ffd1;
   bottom: 0;
+  position: absolute;
   padding: 30px 0;
   margin-top: 30px; }
   .footer a {
