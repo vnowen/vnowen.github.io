@@ -131,6 +131,9 @@ ul {
 .oblique {
   font-style: italic; }
 
+.small-font {
+  font-size: 0.8em; }
+
 .uppercase {
   text-transform: uppercase; }
 
