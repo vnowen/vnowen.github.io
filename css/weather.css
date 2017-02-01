@@ -421,55 +421,55 @@
 WEATHER CONTAINER
 ****************/
 
-#weatherBackground{
+/*#weatherBackground{
 	height: 1100px;
-	width: 100%;
+	width: 100vw;
 	position: relative;
 	top: 0;
 	left: 0;
-}
+}*/
 
 .sunnyBackground {
 	/*background: #00BBFF;*/
-	background: #75c9ff;
+	background: #75c9ff !important;
 }
 
 .cloudyBackground {
-	background: #67809F;
+	background: #67809F !important;
 }
 
 .rainyBackground {
-	background: #E6E6E6;
+	background: #6B808B !important;
 }
 
 .snowyBackground {
 	/*background: #1F3A93;*/
-	background: #77b0f1;
+	background: #77b0f1 !important;
 }
 
 .starryBackground {
-	background: #222233;
+	background: #222233 !important;
 }
 .stormyBackground {
 	/*background: #444444;*/
-	background: #717171;
+	background: #717171 !important;
 }
 
-.house {
-	width: 100%;
+/*.house {
+	width: 100vw;
   position: absolute;
   bottom: 0px;
 }
 .house img {
 	width: inherit;
-}
+}*/
 body {
 	margin: 0;
 }
 
 /*medium*/
 @media only screen and (min-width: 639px) {
-  #weatherBackground {
+  /*#weatherBackground {
       height: 1000px;
       width: 100%;
       position: relative;
@@ -480,12 +480,12 @@ body {
 	.weather-image {
 		margin-left: auto;
 		margin-right: auto;
-	}
+	}*/
 }
 
 /*large*/
 @media only screen and (min-width: 1023px) {
-  #weatherBackground {
+  /*#weatherBackground {
       height: 1200px;
       width: 100%;
       position: relative;
@@ -495,5 +495,5 @@ body {
 	.weather-image {
 		margin-left: auto;
 		margin-right: auto;
-	}
+	}*/
 }

@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viktoria Nowén</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+      <div id="projects-page" class="">
+        <div class="row">
+          <a id="back-to-home" class="text-link" href="index.html#projects-section">
+            <i class="fa fa-chevron-left"></i> Go back
+          </a>
+        </div>
+
+        <div class="row">
+          <div class="small-2 columns end project-thumb active">
+            <a class="project-link" href="#" data-project-name="roar">
+              <img src="images/roar.png" alt="" />
+            </a>
+          </div>
+          <div class="small-2 columns project-thumb">
+            <a class="project-link" href="#" data-project-name="dashboard">
+              <img src="images/dashboard_thumb.png" alt="">
+            </a>
+          </div>
+          <div class="small-2 columns project-thumb">
+            <a class="project-link" href="#" data-project-name="remembering">
+              <img src="images/remembering_small.png" alt="" />
+            </a>
+          </div>
+          <div class="small-2 columns project-thumb">
+            <a class="project-link" href="#" data-project-name="oasis">
+              <img src="images/oasis_small.png" alt="" />
+            </a>
+          </div>
+          <div class="small-2 columns project-thumb">
+            <a class="project-link" href="#" data-project-name="domd">
+              <img src="images/domd_small.png" alt="" />
+            </a>
+          </div>
+          <div class="small-2 columns end project-thumb">
+            <a class="project-link" href="#" data-project-name="webpage">
+              <img src="images/webpage_small.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="weatherBackground" class="section row margin-top">
+
+          <div id="roar-project" class="project-description">
+            <h1>3D Animation: The Roar</h1>
+            <img src="images/roar2.png" alt="">
+            <br> <br>
+            <p>During a 3D course I got the chance to build an animation from
+              scratch.
+              In this winter weather I wanted something colourful and happy.
+              <br>
+              <br>
+              <img src="images/roar_storyboard.jpg" alt="">
+              <br>
+              <br>
+              This was a 100 hours project which included planning independently
+              to deadlines and milestones. I started sketching and then
+              building a minimum viable product and went
+              with the agile approach adjusting and
+              improving. I like to implement processes from
+              my work experience to my personal projects as well to get a clear
+              structure and established results.
+            </p>
+            <video loop controls id="animation">
+              <source src="assets/ROAR_animation.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+          <div id="dashboard-project" class="project-description">
+            <h1>Swedish Embassy Dashboard</h1>
+
+            <div class="small-12">
+
+              <p>
+                A work in progress. This will become a dashboard for our home. It'll
+                show the time, weather and temperature in real time with CSS and JS,
+                grocery lists fetched from Google Keep or Trello as well as water
+                and energy consuming.
+              </p>
+              <ul class="wip-checklist">
+                <li>
+                  <i class="fa fa-check-square" aria-hidden="true"></i>
+                  Show weather from API (this is an example in which you can choose to see different weather)
+                </li>
+                <li>
+                  <i class="fa fa-check-square" aria-hidden="true"></i>
+                  Background image of house
+                </li>
+                <li>
+                  <i class="fa fa-square" aria-hidden="true"></i>
+                  Date & time
+                </li>
+                <li>
+                  <i class="fa fa-square" aria-hidden="true"></i>
+                  Calendar (weekly update)
+                </li>
+                <li>
+                  <i class="fa fa-square" aria-hidden="true"></i>
+                  Temperature & humidity
+                </li>
+                <li>
+                  <i class="fa fa-square" aria-hidden="true"></i>
+                  Grocery list & food recipe inspiration
+                </li>
+                <li>
+                  <i class="fa fa-square" aria-hidden="true"></i>
+                  Contact information of the residents
+                </li>
+                <li>
+                  <i class="fa fa-square" aria-hidden="true"></i>
+                  Status if toilet/shower is occupied
+                </li>
+              </ul>
+            </div>
+
+            <div class="dashboard-background">
+              <div class="small-6 small-offset-6">
+                <select id="weather-select" class="weather-select"
+                name="weatherSelect" onchange="updateWeather()">
+                  <option value="sunny">sunny</option>
+                  <option value="cloudy">cloudy</option>
+                  <option value="stormy">stormy</option>
+                  <option value="starry">starry</option>
+                  <option value="rainy">rainy</option>
+                  <option value="snowy">snowy</option>
+                </select>
+              </div>
+              <div id="weather" class="sunny"></div>
+              <div class="house-image">
+                <img src="images/house_dark.png" alt="House" />
+              </div>
+            </div>
+
+          </div>
+          <div id="remembering-project" class="project-description">
+            <h1>Remembering</h1>
+            <p>
+              I feel for the elephants among many other creatures that are in
+              danger, and we are to blame.
+              <br>
+              <br>
+              This print grew from the theme “contrast” and the fact that in too
+              many places we see animals outside their natural habitat, caged.
+              I wanted the illustration to reflect the contrast of a creature
+              standing on a floor instead of the ground but in the same time
+              being free in the universe, as it should be.
+              <br>
+              <br>
+              A work in progress, exploring other animals in the world.
+            </p>
+            <img src="images/remembering.png" alt="">
+            <br>
+            <br>
+            <p class="italic">
+              Method: Graphite pens, Charcoal, Photoshop
+            </p>
+
+          </div>
+          <div id="oasis-project" class="project-description">
+            <h1>Oasis</h1>
+            <p>
+              I had lived in Stockholm for a year and while I began to feel like
+              home in cold the capital, I also went on with a constant feeling
+              of wanting to be somewhere else.
+              <br>
+              <br>
+              To be creative that summer was my oasis among concrete and steel.
+              The oasis project includes three oil paintings of imaginary
+              landscapes which are displayed in the northern Sweden.
+            </p>
+            <img src="images/oasis.png" alt="">
+            <br>
+            <br>
+            <p class="italic">
+              Method: Oil
+            </p>
+          </div>
+          <div id="domd-project" class="project-description">
+            <h1>DÖMD - A student event</h1>
+            <p>
+              DÖMD is a three days event with music, parties and one of northern
+              Europe's largest amateur dart competitions with 128 competing teams
+              which I arranged together with 12 other students.
+              <br>
+              <br>
+
+               I was part of a three person graphics team and responsible for
+               marketing  and graphics of the event. That involved keeping in
+              touch with sponsors, creating prints, designing the website and
+              mobile app as well as delivering within tight deadlines. The
+              printings included advertising posters, a logotype, flights for
+              darts, a folder about the event and stickers for beer bottles.
+            </p>
+            <img src="images/domd_project.png" alt="">
+            <br>
+            <br>
+          </div>
+          <div id="webpage-project" class="project-description">
+            <h1>My portfolio</h1>
+            <p>
+              Hello there!
+              <br>
+              <br>
+              This is my portfolio and here I'll display my projects, it's a
+              work in progress and therefore it can be a bit messy from time to
+              time.
+              <br>
+              <br>
+              When I decided to create my own portfolio I was kinda' new to the whole
+              web design/ UX business and did a lot of research on how to progress.
+              I followed a design process, much like this one:
+            </p>
+              <ol>
+                <li>Analysis</li>
+                <li>Concept</li>
+                <li>Design</li>
+                <li>Technique/method</li>
+              </ol>
+              <p>
+              And it went on well: I did my research, I sketched on paper, I
+              iterated and finally I had a UI made in Illustrator which you can
+              see in the bottom of this page. This was the "finale" design sketch
+              before I actually began to develop the site. And as a newbie I
+              really thought that this was how my site would look like when I
+              was finished. I think it's fun to see how the site developed from it.
+              <br>
+              <br>
+              This was like two years ago now and you can see a lot has changed.
+              I still adore the mint colour, but I felt that I had to start from
+              the beginning, a fresh start!
+              <br>
+              <br>
+              I now live in Cambridge, UK, freelancing at the moment and just enjoying
+              the time here and trying to find stuff I like to do. For example
+              drinking real ales at cosy Brittish pubs and crafting stuff at home
+              as well as catching up and developing my UX ninja skills.
+            </p>
+
+            <a href="#" id="expand-mockup" class="text-link">
+              Show old design
+            </a>
+            <div id="mockup">
+              <img src="images/mockup.png" alt="" />
+            </div>
+
+          </div>
+
+        </div>
+        <a id="go-to-top" class="to-top text-link" href="#">
+            <i class="fa fa-chevron-up fa-2x"></i> Take me to the top
+        </a>
+      </div>
+
+
+
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="css/foundation.min.css" media="screen" title="no title">
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="css/variables.css">
+      <link rel="stylesheet" href="css/weather.css">
+      <link rel="stylesheet" href="css/projects.css">
+
+      <script src="https://use.fontawesome.com/6ece58ab08.js"></script>
+      <script src="js/vendor/jquery-3.1.1.min.js"></script>
+      <script src="js/vendor/foundation.min.js"></script>
+      <script src="js/projects.js"></script>
+    </body>
+</html>

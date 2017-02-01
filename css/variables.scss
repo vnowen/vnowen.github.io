@@ -1,9 +1,31 @@
 // colours
-
 $green: #e3ffd1;
 $pink: #f2d0ce;
 $grey: #3c4b52;
 
+$primary-color: #e3ffd1;
+$secondary-color: #f2d0ce;
+$third-color: #3c4b52;
+
 $black: #000000;
 $white: #ffffff;
 $brown: #383429;
+
+$lightgrey: #6B808B;
+$mediumgrey: #50636D;
+$darkgrey: #22292C;
+
+$sunny-blue: #75c9ff;
+$sunny-blue-greyscaled: #c2c2c2;
+$sunny-yellow: #FFEE44;
+$sunny-yellow-greyscaled: #ffffff;
+
+$one-third: 100vh / 3;
+$one-seventh-width: 100vw / 7;
+$md-one-seventh-width: 70vw / 7;
+
+$weather-background-width: 70vw;
+$weather-background-height: $weather-background-width *2.5;
+
+
+$side-margin:30vw /2;

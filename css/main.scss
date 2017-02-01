@@ -8,39 +8,73 @@ html, body {
   font-size: 14px;
   background-color: white;
   color: #000000;
-}
-
-
-.center {
-  margin: auto;
-  width: 60%;
-}
-
-.inline-heading {
-  display: inline;
-  vertical-align: middle;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 a {
-  color: $black;
+  color: $white;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.margin-top {
+  margin-top: 20vh;
+  h1 {
+    margin-top: 20px;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+#header-section {
+  background-color: $primary-color;
+  border-bottom: 50px solid $secondary-color;
+}
+.header {
+  text-align: center;
+}
+.enter {
+  position: relative;
+  margin-top: 28vh;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+a.text-link {
+  color: $secondary-color;
   text-decoration: none;
   position: relative;
+  top: 22vh;
+  font-size: 4vw;
+  font-weight: 900;
+
+  padding: 6px;
 }
 
 a:hover {
-  color: $black;
+  color: $secondary-color;
   transform: scaleX(1);
+
 }
 
 a.text-link:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: $secondary-color;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -54,153 +88,186 @@ a.text-link:hover:before {
   transform: scaleX(1);
 }
 
+#projects-section {
+  background-color: $mediumgrey;
 
-.logo {
-  // width: 20vw;
-  // max-width: 100px;
-}
+  .divide-div {
+    height: 50vh;
+    &:hover {
 
-.header {
-  width: 100% !important;
-  background-color: $green;
-  color: $black;
-  padding: 20px;
-  border-bottom: 5vh solid $pink;
-  height: 80vh;
-  text-align: center;
-  // .inline-heading, p {
-  //   display: none;
-  // }
+    }
+    &.work-projects {
+      background-color: $lightgrey;
+    }
+    &.personal-projects {
 
-  ul{
-    padding: 0 !important;
-    li {
-      text-align: right;
     }
   }
-}
-.content {
-  margin-top: 50px;
-}
-ul {
-  list-style-type: none;
-}
-
-.row > div {
-    padding-top: 20vh;
-}
-.row {
-  p, h1, h2, h3, h4, h5, ul, ol {
-    padding: 0 40px;
+  h1 {
+   color: $secondary-color;
+   text-decoration: none;
+   position: relative;
+   top: 10vh;
+   font-size: 2em;
   }
-}
-.image {
-  padding-bottom: 50px;
-}
 
-.projects {
-  margin: 10px 0;
-}
 
-.contact {
-    background-color: $grey;
-    text-align: center;
+  .hover {
+
+    &.sunny:after {
+      background-color: $sunny-yellow;
+      transition: background-color 500ms;
+    }
+    &.sunnyBackground {
+      background-color: $sunny-blue !important;
+      transition: background-color 500ms;
+    }
+  }
+
+  .overlay {
     color: $white;
-    padding: 5vh;
-    height: 20vh;
-    a {
-      color: $white;
-      padding: 0 10px;
-      :hover {
-        color: $pink;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    background: transparentize($darkgrey, 0.5);
+  }
+
+  .project-img {
+    max-height: $one-third;
+    overflow: hidden;
+    position: relative;
+    img {
+      overflow: hidden;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      transition: filter 500ms;
+      &.hover {
+        -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%) !important;
+        transition: filter 500ms;
       }
     }
+  }
+  #weatherBackgroundSmall{
+  	height: 50vw;
+  	width: 50vw;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+    background-color: $sunny-blue-greyscaled;
+    transition: background-color 500ms;
+  }
+  .sunny {
+  	animation: sunny 15s linear infinite;
+  	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+  	height: 140px;
+  	width: 20px;
+  	margin-left: -15px;
+  	position: absolute;
+  	left: 100px;
+  	top: 10px;
+  }
+  .sunny:before {
+  	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+  	content: '';
+  	height: 140px;
+  	width: 20px;
+  	opacity: 1;
+  	position: absolute;
+  	bottom: 0px;
+  	left: 0px;
+  	transform: rotate(90deg);
+  }
+  .sunny:after {
+  	background: $sunny-yellow-greyscaled;
+    transition: background-color 500ms;
+  	border-radius: 50%;
+  	content: '';
+  	height: 80px;
+  	width: 80px;
+  	position: absolute;
+  	left: -30px;
+  	top: 30px;
+  }
+  @keyframes sunny {
+  	0% { transform: rotate(0deg); }
+  	100% { transform: rotate(360deg); }
+  }
+
 }
+#blog-section {
+  background-color: $secondary-color;
 
-
-
-.project-img {
-  padding: 8px;
-  :hover {
-  -webkit-filter: brightness(1.05) contrast(0.95);
+  h1 {
+    padding-top: 30vh;
+    text-align: center;
+    font-weight: 900;
   }
 }
-
-.square {
-  padding-top: 100%;
-  height: 0 !important;
-}
-
-.house-small {
-  position: absolute;
-  bottom: 0px;
-	width: 100%;
-	height: 0;
-	border-left: 90px solid transparent;
-	border-right: 100px solid $brown;
-	border-bottom: 150px solid $brown;
-}
-
-.big-heading {
-  margin-top: 15vh;
-}
-
-.margin-top {
-  margin-top: 10px;
-}
-.footer {
-  text-align: center;
-  background-color: $green;
-  bottom: 0;
-  position: absolute;
-  padding: 30px 0;
-  margin-top: 30px;
-  a {
-    padding: 0 10px;
-    :hover {
-      color: $pink;
-    }
-  }
-}
-
-.next-project-link {
-  float: right;
-}
-
-.previous-project-link {
-  float: left;
-}
-
-.oblique {
-  font-style: italic;
-}
-
-.small-font {
-    font-size: 0.8em;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.contact-heading {
+#contact-section {
+  background-color: $mediumgrey;
   color: $white;
-  padding-top: 10px !important;
-
+  .contact {
+    // margin-bottom: 100px;
+  }
+  h2 {
+    padding-top: 30vh;
+  }
+  a {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 40px;
+    height: 45px;
+    border-radius: 5px;
+  }
 }
+
+.sidebar {
+  position: fixed;
+  right: 20px;
+  top: 45vh;
+  z-index: 1;
+}
+.sidebar-menu-list {
+  list-style: none;
+}
+.scroll-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: transparentize($darkgrey, 0.7);
+  margin: 10px 0;
+  &:hover {
+    background: transparentize($secondary-color, 0.5);  }
+}
+.active {
+  background: transparentize($black, 0.4);
+}
+
 
 /*medium*/
 @media only screen and (min-width: 639px) {
-  .row, div {
-    margin-left: auto;
-    margin-right: auto;
+  #projects-section {
+    .personal-projects {
+      max-width: 70vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #weatherBackgroundSmall{
+    	height: 35vw;
+    	width: 35vw;
+    }
+  }
+
+  a.text-link {
+    font-size: 2vw;
   }
 }
 
 /*large*/
 @media only screen and (min-width: 1023px) {
-  .row {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 }

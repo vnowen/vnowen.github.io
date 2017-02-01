@@ -1,0 +1,173 @@
+.margin-top {
+  margin-top: 2vh; }
+  .margin-top h1 {
+    margin-top: 20px; }
+
+.row {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px; }
+  .row p, .row h1, .row ol, .row ul {
+    padding: 10px; }
+
+#projects-page {
+  display: none;
+  background-color: #22292C;
+  min-height: 100vh;
+  width: 100vw;
+  padding-bottom: 50px; }
+
+.project-description {
+  display: none;
+  color: #ffffff;
+  margin-top: 100vh; }
+  .project-description.active {
+    display: block;
+    margin-top: 0;
+    transition: margin-top 1000ms; }
+
+.project-thumb {
+  padding: 2px;
+  width: 14.28571vw;
+  transition: 500ms; }
+  .project-thumb.active {
+    width: 28.57143vw;
+    transition: width 500ms; }
+
+#animation {
+  width: 100vw;
+  position: relative;
+  left: 0; }
+
+#expand-mockup {
+  padding: 10px;
+  background: rgba(80, 99, 109, 0.5);
+  margin: 10px; }
+
+#mockup {
+  display: none;
+  margin-top: 20px; }
+
+.to-top {
+  text-align: center;
+  margin-left: 10px; }
+
+#back-to-home {
+  float: left;
+  margin: 10px; }
+
+.italic {
+  font-style: italic; }
+
+a {
+  color: #f2d0ce;
+  text-decoration: none;
+  position: relative;
+  font-size: 5vw;
+  font-weight: 900; }
+
+a:hover {
+  color: #f2d0ce;
+  transform: scaleX(1); }
+
+a:visited {
+  color: #f2d0ce; }
+
+a.text-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f2d0ce;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+a.text-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1); }
+
+#weatherBackgroundSmall {
+  height: 50vw;
+  width: 50vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #75c9ff; }
+
+.dashboard-background {
+  position: relative; }
+
+.house-image {
+  margin-top: 80px; }
+  .house-image img {
+    width: inherit; }
+
+.sunny {
+  animation: sunny 15s linear infinite;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  height: 140px;
+  width: 20px;
+  margin-left: -15px;
+  position: absolute;
+  left: 100px;
+  top: 10px; }
+
+.sunny:before {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 140px;
+  width: 20px;
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: rotate(90deg); }
+
+.sunny:after {
+  background: #FFEE44;
+  border-radius: 50%;
+  content: '';
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: -30px;
+  top: 30px; }
+
+@keyframes sunny {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@media only screen and (min-width: 639px) {
+  .row {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; }
+
+  .to-top {
+    margin-left: 15vw; }
+
+  .project-thumb {
+    padding: 5px;
+    width: 10vw;
+    transition: 500ms; }
+    .project-thumb.active {
+      width: 20vw;
+      transition: width 500ms; }
+
+  a {
+    font-size: 2vw; }
+
+  #animation {
+    width: 70vw;
+    position: relative;
+    left: 0; } }
+
+/*# sourceMappingURL=projects.css.map */
