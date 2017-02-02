@@ -11,6 +11,9 @@ html, body {
 body {
   -webkit-overflow-scrolling: touch; }
 
+.wrapper {
+  -webkit-overflow-scrolling: touch; }
+
 a {
   color: #ffffff; }
   a:hover {

@@ -14,7 +14,10 @@ html, body {
 body {
   -webkit-overflow-scrolling: touch;
 }
-
+.wrapper{
+    // overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
 a {
   color: $white;
   &:hover {
