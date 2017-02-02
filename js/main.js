@@ -40,6 +40,7 @@ $(document).ready(function() {
   var timer;
 
   $(window).scroll(function(event){
+
     if (timer)
       clearTimeout(timer);
     timer = setTimeout(function() {
@@ -67,7 +68,7 @@ $(document).ready(function() {
       }
       $(".scroll-item").removeClass("active");
       $("#" + active + "-menuitem").addClass('active');
-    }, 50);
+    }, 200);
   });
 
   $("#go-to-top").click(function () {

@@ -8,13 +8,16 @@ html, body {
   color: #000000;
   text-align: center; }
 
+body {
+  -webkit-overflow-scrolling: touch; }
+
 a {
   color: #ffffff; }
   a:hover {
     color: #f2d0ce; }
 
 .section {
-  min-height: 100vh; }
+  height: 100vh; }
 
 .margin-top {
   margin-top: 20vh; }
@@ -72,10 +75,6 @@ a.text-link:hover:before {
 
 #projects-section {
   background-color: #50636D; }
-  #projects-section .divide-div {
-    height: 50vh; }
-    #projects-section .divide-div.work-projects {
-      background-color: #6B808B; }
   #projects-section h1 {
     color: #f2d0ce;
     text-decoration: none;
@@ -96,10 +95,12 @@ a.text-link:hover:before {
     left: 20px;
     background: rgba(34, 41, 44, 0.5); }
   #projects-section .project-img {
-    max-height: 33.33333vh;
+    height: 33.33333vh;
     overflow: hidden;
     position: relative; }
     #projects-section .project-img img {
+      max-width: none;
+      height: 100%;
       overflow: hidden;
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
@@ -111,7 +112,7 @@ a.text-link:hover:before {
         filter: grayscale(0%) !important;
         transition: filter 500ms; }
   #projects-section #weatherBackgroundSmall {
-    height: 50vw;
+    height: 100%;
     width: 50vw;
     position: relative;
     top: 0;
@@ -200,11 +201,30 @@ a.text-link:hover:before {
     margin-left: auto;
     margin-right: auto; }
   #projects-section #weatherBackgroundSmall {
-    height: 35vw;
+    height: 100%;
     width: 35vw; }
 
   a.text-link {
     font-size: 2vw; } }
 /*large*/
+/**
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .section {
+    height: 1024px !important; } }
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  .section {
+    height: 768px; } }
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40 / 71) {
+  .section {
+    height: 500px; } }
 
 /*# sourceMappingURL=main.css.map */

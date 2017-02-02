@@ -11,6 +11,10 @@ html, body {
   text-align: center;
 }
 
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
 a {
   color: $white;
   &:hover {
@@ -19,7 +23,7 @@ a {
 }
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .margin-top {
@@ -91,18 +95,7 @@ a.text-link:hover:before {
 #projects-section {
   background-color: $mediumgrey;
 
-  .divide-div {
-    height: 50vh;
-    &:hover {
 
-    }
-    &.work-projects {
-      background-color: $lightgrey;
-    }
-    &.personal-projects {
-
-    }
-  }
   h1 {
    color: $secondary-color;
    text-decoration: none;
@@ -134,10 +127,12 @@ a.text-link:hover:before {
   }
 
   .project-img {
-    max-height: $one-third;
+    height: $one-third;
     overflow: hidden;
     position: relative;
     img {
+      max-width: none;
+      height: 100%;
       overflow: hidden;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
@@ -150,7 +145,7 @@ a.text-link:hover:before {
     }
   }
   #weatherBackgroundSmall{
-  	height: 50vw;
+  	height: 100%;
   	width: 50vw;
   	position: relative;
   	top: 0;
@@ -257,7 +252,7 @@ a.text-link:hover:before {
     }
 
     #weatherBackgroundSmall{
-    	height: 35vw;
+    	height: 100%;
     	width: 35vw;
     }
   }
@@ -270,4 +265,31 @@ a.text-link:hover:before {
 /*large*/
 @media only screen and (min-width: 1023px) {
 
+}
+/**
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .section {
+    height: 1024px !important;
+  }
+}
+
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .section {
+    height: 768px;
+  }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  .section {
+    height: 500px;
+  }
 }
