@@ -4,7 +4,7 @@ $(document).ready(function() {
   var newSection = "";
 
   var vh = $(window).height();
-  $("html, body").css({
+  $("html, body, .wrapper").css({
     height: $(window).height()
   });
   // make a function that fills the array automatic
