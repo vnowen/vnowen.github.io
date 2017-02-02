@@ -14,10 +14,7 @@ html, body {
 body {
   -webkit-overflow-scrolling: touch;
 }
-.wrapper{
-    // overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-}
+
 a {
   color: $white;
   &:hover {
@@ -247,6 +244,7 @@ a.text-link:hover:before {
 
 /*medium*/
 @media only screen and (min-width: 639px) {
+
 
   #projects-section {
     .personal-projects {
