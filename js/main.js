@@ -4,6 +4,9 @@ $(document).ready(function() {
   var newSection = "";
 
   var vh = $(window).height();
+  $("html, body, .section").css({
+    height: $(window).height()
+  });
   // make a function that fills the array automatic
   var sections = [[0, vh/2], [vh/2, vh + vh/2], [vh + vh/2, 2*vh + vh/2],[2*vh + vh/2, 3*vh + vh/2]]
   for (var i = 0; i < sections.length; i++) {
