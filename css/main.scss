@@ -131,8 +131,8 @@ a.text-link:hover:before {
     overflow: hidden;
     position: relative;
     img {
-      max-width: none;
-      height: 100%;
+      width: 100%;
+      min-height: 100%;
       overflow: hidden;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
@@ -244,6 +244,7 @@ a.text-link:hover:before {
 
 /*medium*/
 @media only screen and (min-width: 639px) {
+
   #projects-section {
     .personal-projects {
       max-width: 70vw;
@@ -280,7 +281,7 @@ a.text-link:hover:before {
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
   .section {
-    height: 768px;
+    height: 768px !important;
   }
 }
 
@@ -290,6 +291,6 @@ a.text-link:hover:before {
  */
 @media screen and (device-aspect-ratio: 40/71) {
   .section {
-    height: 500px;
+    height: 500px !important;
   }
 }

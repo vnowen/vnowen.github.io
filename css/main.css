@@ -99,8 +99,8 @@ a.text-link:hover:before {
     overflow: hidden;
     position: relative; }
     #projects-section .project-img img {
-      max-width: none;
-      height: 100%;
+      width: 100%;
+      min-height: 100%;
       overflow: hidden;
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
@@ -218,13 +218,13 @@ a.text-link:hover:before {
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
   .section {
-    height: 768px; } }
+    height: 768px !important; } }
 /**
  * iPhone 5
  * You can also target devices with aspect ratio.
  */
 @media screen and (device-aspect-ratio: 40 / 71) {
   .section {
-    height: 500px; } }
+    height: 500px !important; } }
 
 /*# sourceMappingURL=main.css.map */
