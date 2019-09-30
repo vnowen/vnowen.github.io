@@ -39,38 +39,38 @@ $(document).ready(function() {
   })
 
   var timer;
-
-  $(window).scroll(function(event){
-
-    if (timer)
-      clearTimeout(timer);
-    timer = setTimeout(function() {
-      var toTop = $(document).scrollTop();
-      if (toTop >= sections[0][0] & toTop <= sections[0][1]) {
-        newSection = "header-section";
-      } else if (toTop > sections[1][0] & toTop <= sections[1][1]) {
-        newSection = "projects-section";
-      } else if (toTop > sections[2][0] & toTop <= sections[2][1]) {
-        newSection = "blog-section";
-      } else if (toTop > sections[3][0] & toTop <= sections[3][1]) {
-        newSection = "contact-section";
-      }
-      if (activeSection != newSection) {
-        oldSection = activeSection;
-        activeSection = newSection;
-        active = activeSection.split("-")[0];
-        $('html, body').animate({
-            scrollTop: $("#" + newSection).offset().top
-        }, 400);
-
-        window.location.hash = newSection;
-      } else {
-        event.preventDefault();
-      }
-      $(".scroll-item").removeClass("active");
-      $("#" + active + "-menuitem").addClass('active');
-    }, 200);
-  });
+  // 
+  // $(window).scroll(function(event){
+  //
+  //   if (timer)
+  //     clearTimeout(timer);
+  //   timer = setTimeout(function() {
+  //     var toTop = $(document).scrollTop();
+  //     if (toTop >= sections[0][0] & toTop <= sections[0][1]) {
+  //       newSection = "header-section";
+  //     } else if (toTop > sections[1][0] & toTop <= sections[1][1]) {
+  //       newSection = "projects-section";
+  //     } else if (toTop > sections[2][0] & toTop <= sections[2][1]) {
+  //       newSection = "blog-section";
+  //     } else if (toTop > sections[3][0] & toTop <= sections[3][1]) {
+  //       newSection = "contact-section";
+  //     }
+  //     if (activeSection != newSection) {
+  //       oldSection = activeSection;
+  //       activeSection = newSection;
+  //       active = activeSection.split("-")[0];
+  //       $('html, body').animate({
+  //           scrollTop: $("#" + newSection).offset().top
+  //       }, 400);
+  //
+  //       window.location.hash = newSection;
+  //     } else {
+  //       event.preventDefault();
+  //     }
+  //     $(".scroll-item").removeClass("active");
+  //     $("#" + active + "-menuitem").addClass('active');
+  //   }, 200);
+  // });
 
   $("#go-to-top").click(function () {
     $('html, body').animate({
